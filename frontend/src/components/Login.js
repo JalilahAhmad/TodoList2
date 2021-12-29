@@ -26,8 +26,8 @@ export default function Login(props) {
   };
 
   return (
-    <div className="Login">
-       <form action="">
+    <div className="m-3" >
+       {/* <form action="">
         <label htmlFor="">Email:</label>
         <input
           onChange={(e) => {
@@ -50,9 +50,9 @@ export default function Login(props) {
         <br />
         <input type="submit" value="Login" onClick={loginFunc} className="btn btn-primary"/>
         <Link to="/Register">Don't Have An Account?</Link>
-      </form>
+      </form> */}
        
- {/* <form>
+  <form>
         <div className="form-floating mb-3">
           <input
             type="email"
@@ -91,8 +91,7 @@ export default function Login(props) {
             Don't Have An Account?
           </Link>
         </div>
-      </form> */}
-
+      </form> 
     </div>
   );
 }
