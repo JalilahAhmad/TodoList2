@@ -195,9 +195,7 @@ export default function App() {
         />
         <Route
           path="/login"
-          element={
-            <Login setIsLoggedIn={setIsLoggedIn} setUsername={setUsername} />
-          }
+          element={ <Login setIsLoggedIn={setIsLoggedIn} setUsername={setUsername} />  }
         />
         <Route path="/register" element={<Register />} />
       </Routes>
