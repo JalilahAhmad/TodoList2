@@ -1,12 +1,17 @@
-const mongoose =require("mongoose");
-const url="mongodb://localhost:27017/TodoListV02"
-mongoose.connect(url);
+const mongoose=require('mongoose')
 
-const db =mongoose.connection;
+const dbURL='mongodb://localhost:27017/TodoListV01'
+
+mongoose.connect(dbURL)
+
+//Exstra
+
+const db=mongoose.connection
+
 db.on('error',(err)=>{
-    console.log("ERROR In DB CONNECTION")
-})
+   console.log("ERROR IN MONGODB")
+});
 
 db.on('connected',(err)=>{
-    console.log("DB CONNECTION")
-})
+   console.log("MONGODB IS CONNECTED")
+});
